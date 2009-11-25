@@ -1,0 +1,300 @@
+html, body, form, dt {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 0.9em/1.5 "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  background: #eee;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, blockquote, p, ul, ol, dl, table, #content fieldset {
+  margin: 1em 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+li, dd {
+  margin: 0 0 0 4em;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  margin: 1.5em 0;
+}
+
+#content table, #content thead th, #content tbody {
+  border: 0;
+}
+
+#content tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+
+#content tbody tr, #content td.active {
+  background: #e1edfa;
+}
+
+#content tr.selected {
+  background: #ffd;
+}
+
+#content td.menu-disabled {
+  background: #eee;
+}
+
+#content thead th {
+  padding-top: 0;
+  font-size: 0.75em;
+}
+
+#content th, #content td {
+  padding: 0.3em 10px;
+  background: transparent;
+}
+
+td .marker {
+  margin: 0 0.5em;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 0.2em 0.5em;
+  background: #c30;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+a {
+  color: #c30;
+}
+
+a:hover {
+  background: #c30;
+  color: #fff;
+  text-decoration: none;
+}
+
+pre, code, form .description em, h1 em, h2 em {
+  font-style: normal;
+  font-size: 1em;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+.block-region {
+  border: 1px dashed #cc0;
+  padding: 0.5em 10px;
+  background: #fff;
+  color: #000;
+}
+
+/* Header
+----------------------------------------------- */
+
+#header {
+  padding-top: 1.6em;
+  background: #fc0;
+}
+
+/* Breadcrumb */
+
+#breadcrumb {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  margin: 0;
+  font-size: 0.75em;
+}
+
+#breadcrumb li {
+  list-style: none;
+  float: left;
+  margin: 0;
+}
+
+#breadcrumb a {
+  display: block;
+  position: relative;
+  padding: 0.3em 17px 0.3em 6px;
+  background: url(images/breadcrumb-seperator.png) no-repeat right center;
+  color: #000;
+  text-decoration: none;
+}
+
+#breadcrumb li.inactive a {
+  background-image: url(images/breadcrumb-seperator-inactive.png);
+  color: #c39c00;
+}
+
+/* Title */
+
+#header .wrap {
+  clear: left;
+  width: 100%;
+  overflow: hidden;
+  padding: 0.6em 0 0.4em;
+  background: #eee;
+}
+
+#header .wrap h1 {
+  float: left;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+/* Tabs  */
+
+#tabs * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+#tabs a {
+  background: transparent;
+  color: #c30;
+}
+
+#tabs .primary {
+  float: left;
+  margin: 1.2em 0 0 1em;
+  font-size: 1.2em;
+  white-space: nowrap;
+}
+
+#tabs .primary li {
+  margin-left: 0.5em;
+}
+
+#tabs .primary a {
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -moz-border-radius: 2px;
+  padding: 0.2em 0.5em;
+}
+
+#tabs a:hover,
+#tabs .primary a.active {
+  background: #c30;
+  color: #fff;
+}
+
+#tabs .secondary {
+  clear: left;
+  float: left;
+  width: 62%;
+  margin: 0.4em 0 -0.4em;
+  padding: 0 26px 0 20px;
+  background: #333 url(images/shadow-vertical.png) repeat-y right top;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+#tabs .secondary li {
+  margin: 0 0.7em 0 -0.7em;
+  float: left;
+}
+
+#tabs .secondary a {
+  display: block;
+  padding: 0.7em;
+  color: #fff;
+  white-space: nowrap;
+}
+
+#tabs .secondary a:hover,
+#tabs .secondary a.active {
+  background: #444;
+}
+
+#tabs .secondary a.active {
+  font-weight: bold;
+}
+
+/* Messages, content
+----------------------------------------------- */
+
+div.messages, #content {
+  float: left;
+  width: 62%;
+  overflow: hidden;
+  padding: 0.5em 26px 2em 20px;
+  background: #fff url(images/shadow-vertical.png) repeat-y right top;
+}
+
+#content {
+  overflow: auto;
+}
+
+div.messages {
+  padding-bottom: 0.5em;
+  background-color: #ffc;
+  color: #000;
+}
+
+div.error {
+  border: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+#content h2, #content .admin-panel h3 {
+  border-bottom: 1px dotted #ccc;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#content h3 {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#content .confirmation li {
+  margin-left: 1.5em;
+}
+
+/* Sidebar
+----------------------------------------------- */
+
+#sidebar {
+  float: right;
+  width: 30%;
+}
+
+/* Footer
+----------------------------------------------- */
+
+#footer {
+  clear: left;
+  float: left;
+  width: 62%;
+  padding: 0 26px 3em 20px;
+  background: url(images/shadow-horizontal.png) repeat-x left top;
+  color: #666;
+  font-size: 0.65em;
+}
+
+#footer p {
+  margin: 0 -26px 0 0;
+  padding: 1.4em 26px 0 0;
+  background: url(images/shadow-corner.png) no-repeat right top;
+}
+
+#footer a {
+  color: #666;
+}
+
+#footer a:hover {
+  background: #666;
+  color: #fff;
+}

@@ -1,0 +1,19 @@
+name = Fruity
+description = Clean and colorful admin theme based on a 960 pixels/16-column grid.
+version = VERSION
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = stylesheets/960.css
+stylesheets[all][] = stylesheets/master.css
+stylesheets[all][] = stylesheets/forms.css
+scripts[] = scripts/sidebar.js
+
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[footer] = Footer
+; Information added by drupal.org packaging script on 2009-02-03
+version = "6.x-1.x-dev"
+core = "6.x"
+project = "fruity"
+datestamp = "1233662896"
+
