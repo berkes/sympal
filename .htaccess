@@ -36,6 +36,9 @@ DirectoryIndex index.php
   php_value mbstring.http_input             pass
   php_value mbstring.http_output            pass
   php_value mbstring.encoding_translation   0
+  
+  # Added for sympal distribution
+  php_value memory_limit                    32M
 </IfModule>
 
 # PHP 4, Apache 2.
@@ -46,6 +49,9 @@ DirectoryIndex index.php
   php_value mbstring.http_input             pass
   php_value mbstring.http_output            pass
   php_value mbstring.encoding_translation   0
+  
+  # Added for sympal distribution
+  php_value memory_limit                    32M
 </IfModule>
 
 # PHP 5, Apache 1 and 2.
@@ -56,6 +62,9 @@ DirectoryIndex index.php
   php_value mbstring.http_input             pass
   php_value mbstring.http_output            pass
   php_value mbstring.encoding_translation   0
+  
+  # Added for sympal distribution
+  php_value memory_limit                    32M
 </IfModule>
 
 # Requires mod_expires to be enabled.
