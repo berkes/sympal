@@ -7,7 +7,7 @@
  * @return
  *   An array of modules to enable.
  */
-function wizzlern_profile_modules() {
+function sympal_profile_modules() {
   //Required modules
   return array(
     //Required core modules
@@ -19,8 +19,6 @@ function wizzlern_profile_modules() {
     6 => 'dblog',
 
     //Optional modules
-    100 => 'book',
-    101 => 'forum',
     102 => 'upload',
     103 => 'statistics',
     104 => 'search',
@@ -37,23 +35,29 @@ function wizzlern_profile_modules() {
     1005 => 'imagecache',
     1006 => 'imagecache_ui',
     1007 => 'scheduler',
-    1008 => 'admin_menu',
+    
+    1009 => 'imageapi',
+    1010 => 'imageapi_imagemagick',
+    1011 => 'thickbox',
 
-    1010 => 'views',//Views
-    1011 => 'views_ui',
+    1030 => 'views',//Views
+    1031 => 'views_ui',
 
-    1020 => 'content',//CCK
-    1021 => 'content_copy',
-    1022 => 'content_permissions',
-    1023 => 'fieldgroup',
-    1024 => 'nodereference',
-    1025 => 'number',
-    1026 => 'optionwidgets',
-    1027 => 'text',
-    1028 => 'userreference',
-    1029 => 'filefield',
-    1030 => 'imagefield',
+    1040 => 'content',//CCK
+    1041 => 'content_copy',
+    1042 => 'content_permissions',
+    1043 => 'fieldgroup',
+    1044 => 'nodereference',
+    1045 => 'number',
+    1046 => 'optionwidgets',
+    1047 => 'text',
+    1048 => 'userreference',
+    1049 => 'filefield',
+    1050 => 'imagefield',
 
+    #features module with its exported features
+    3001 => 'features',
+    
     //Enable Development modules
     //2001 => 'devel',
     //2002 => 'devel_themer',
@@ -75,10 +79,10 @@ function wizzlern_profile_modules() {
  *   and optional 'language' to override the language selection for
  *   language-specific profiles.
  */
-function wizzlern_profile_details() {
+function sympal_profile_details() {
   return array(
-    'name' => 'Sympal: Drupal for simple brochure-sites.',
-    'description' => 'Select this profile as base for your Wizzlern training.'
+    'name' => 'sympal',
+    'description' => 'Sympal: Drupal for simple brochure-sites.'
   );
 }
 
@@ -91,7 +95,7 @@ function wizzlern_profile_details() {
  *   while the values will be displayed to the user in the installer
  *   task list.
  */
-function wizzlern_profile_task_list() {
+function sympal_profile_task_list() {
 }
 
 /**
@@ -145,7 +149,7 @@ function wizzlern_profile_task_list() {
  *   An optional HTML string to display to the user. Only used if you
  *   modify the $task, otherwise discarded.
  */
-function wizzlern_profile_tasks(&$task, $url) {
+function sympal_profile_tasks(&$task, $url) {
 
   // Insert default user-defined node types into the database. For a complete
   // list of available node type attributes, refer to the node type API
@@ -215,10 +219,10 @@ function wizzlern_profile_tasks(&$task, $url) {
  * Allows the profile to alter the site-configuration form. This is
  * called through custom invocation, so $form_state is not populated.
  */
-function wizzlern_form_alter(&$form, $form_state, $form_id) {
+function sympal_form_alter(&$form, $form_state, $form_id) {
   if ($form_id == 'install_configure') {
-    // Set default for site name field.
-    $form['site_information']['site_name']['#value'] = $_SERVER['SERVER_NAME'] . ' portfolio';
+    // Set defaults.
+    //$form['site_information']['site_name']['#value'] = $_SERVER['SERVER_NAME'] . ' portfolio';
   }
 }
 
