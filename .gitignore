@@ -1,0 +1,5 @@
+# Uploaded files should be ignored.
+sites/default/files/
+
+# Settings.php contains security sensiticve data, database credentials, e.g.
+sites/default/settings.php
